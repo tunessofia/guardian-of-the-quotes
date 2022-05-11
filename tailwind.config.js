@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         bebas: ["Bebas Neue", "sans"],
-        indie: ["Indie Flower", "sans"]
+        indie: ["Indie Flower", "sans"],
+        lato: ["Noto Serif", "sans"],
       },
     },
   },
