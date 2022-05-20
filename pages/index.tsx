@@ -1,5 +1,4 @@
 import { QuoteCard } from "../components/quotes/card";
-import { AddQuote } from "../components/quotes/add";
 import { getQuotes } from "../dao/quotes";
 
 const Quotes = ({ quotes }) => (
@@ -11,7 +10,9 @@ const Quotes = ({ quotes }) => (
 						<h2 className="text-3xl font-bebas">Guardian of the Quotes</h2>
 					</div>
 					<div className="flex justify-end">
-						<AddQuote></AddQuote>
+						<a href="/add" className="w-32 rounded-3xl bg-cyan-400 text-white font-bebas border p-2">
+         				 	Add Quote
+        				</a>
 					</div>
 				</div>
 				<div className="mt-10 grid grid-rows-2 w-3/4 gap-4">
