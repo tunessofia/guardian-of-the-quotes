@@ -27,6 +27,7 @@ const Quotes = ({ quotes }) => (
 
 export async function getStaticProps() {
 	const allQuotes = await getQuotes();
+	console.log("got quotes:"+ JSON.stringify(allQuotes));
 	return {
 		props: {
 			quotes: allQuotes,
