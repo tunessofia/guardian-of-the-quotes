@@ -14,7 +14,7 @@ const Quotes = () => {
 	return (
 		<div id="container" className="min-h-screen min-w-full bg-gray-100 lg:p-10">
 			<div className="w-full max-w-full mx-auto">
-				<div className="mx-10">
+				<div className="mx-10 py-10">
 					<div className="grid grid-cols-2 gap-4">
 						<div>
 							<h2 className="text-3xl font-bebas">Guardian of the Quotes</h2>
