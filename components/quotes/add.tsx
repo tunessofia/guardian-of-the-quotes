@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { post } from "../../utils/api";
+import { useRouter } from 'next/router';
 
 export const AddQuote = () => {
 	const [newQuote, setNewQuote] = useState({ content: "", author: "" });
+	const router = useRouter();
 
 	const isEmpty = (data) => {
 		const filtered = Object.values(data).filter((value) => {
@@ -25,7 +27,7 @@ export const AddQuote = () => {
 
 		await post("api/create", newQuote)
 			.then(() => {
-				setNewQuote({ content: "", author: "" });
+				router.push('/');
 			})
 			.catch((e) => {
 				alert("an error occurred");

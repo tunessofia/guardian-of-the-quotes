@@ -10,7 +10,7 @@ const Quotes = ({ quotes }) => (
 						<h2 className="text-3xl font-bebas">Guardian of the Quotes</h2>
 					</div>
 					<div className="flex justify-end">
-						<a href="/add" className="w-32 rounded-3xl bg-cyan-400 text-white font-bebas border p-2">
+						<a href="/add" className="w-32 rounded-3xl bg-cyan-400 text-white text-center font-bebas border p-2">
          				 	Add Quote
         				</a>
 					</div>
