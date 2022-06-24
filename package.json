@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "prisma migrate deploy && next build",
-    "start": "next start -p $PORT"
+    "start": "next start -p $PORT",
+    "prod": "next build && npm run start -p 3000"
   },
   "engines": {
     "node": "14.x"

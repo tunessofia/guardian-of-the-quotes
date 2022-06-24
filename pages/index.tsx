@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { QuoteCard } from "../components/quotes/card";
+import { get } from "../utils/api";
 
 const Quotes = () => {
 	const [data, setData] = useState(null)
 	useEffect(() => {
-		fetch('/api/get')
-		  .then((res) => res.json())
+		get('/api/get')
 		  .then((data) => {
 			setData(data)
 		  })

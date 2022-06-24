@@ -9,7 +9,7 @@ const requestDefault: RequestInit = {
 export const get = (url: string) => {
 	const request = Object.assign({ method: "GET" }, requestDefault);
 	return fetch(url, request).then(function (response) {
-		return;
+		return response.json();
 	});
 };
 
