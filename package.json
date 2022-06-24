@@ -4,7 +4,7 @@
   "description": "Deploy Next.js server-side React apps to Heroku",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "prisma migrate deploy && next build",
     "start": "next start -p $PORT"
   },
   "engines": {
